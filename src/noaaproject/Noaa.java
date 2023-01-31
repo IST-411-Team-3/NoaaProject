@@ -1,9 +1,14 @@
 package noaaproject;
 
-/**
- *
- * @author AJ Germani
- */
+/*
+Project: Lab 3
+Purpose Details: NOAA Web Services
+Course: IST 411
+Author: Team 3
+Date Developed: 1/31/2023
+Last Date Changed: 1/31/2023
+Revision: 1
+*/
 public class Noaa {
 
     /**
