@@ -7,12 +7,13 @@ package noaaproject;
 class NoaaData {
 
     private Metadata metaData;
-    private Results results;
+    private Results results[];
 
-    public NoaaData(Metadata metaData, Results results) {
+    public NoaaData(Metadata metaData, Results[] results) {
         this.metaData = metaData;
         this.results = results;
     }
+
 
     public NoaaData() {
     }
@@ -25,12 +26,14 @@ class NoaaData {
         this.metaData = metaData;
     }
 
-    public Results getResults() {
+    public Results[] getResults() {
         return results;
     }
 
-    public void setResults(Results results) {
+    public void setResults(Results[] results) {
         this.results = results;
     }
+
+
 
 }
