@@ -1,5 +1,7 @@
 package noaaproject;
 
+import com.google.gson.Gson;
+
 /*
 Project: Lab 3
 Purpose Details: NOAA Web Services
@@ -15,7 +17,8 @@ public class Noaa {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String acessToken = "bEEvYCuuoTTzcuyIotkYswwRfEcsuhxD";
+        Gson gson = new Gson();
     }
     
 }
