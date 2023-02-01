@@ -18,9 +18,6 @@ Revision: 1
  */
 public class Noaa {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         String accessToken = "bEEvYCuuoTTzcuyIotkYswwRfEcsuhxD";
         Gson gson = new Gson();
@@ -49,10 +46,10 @@ public class Noaa {
                 System.out.println("Result " + count++);
                 System.out.println("---------");
                 System.out.printf("%-15s%s\n", "Uid", res.getUid());
-                System.out.printf("%-15s%s\n", "Min Date", res.getMinDate());
-                System.out.printf("%-15s%s\n", "Max Date", res.getMaxDate());
+                System.out.printf("%-15s%s\n", "Min Date", res.getMindate());
+                System.out.printf("%-15s%s\n", "Max Date", res.getMaxdate());
                 System.out.printf("%-15s%s\n", "Name", res.getName());
-                System.out.printf("%-15s%s\n", "Data Coverage", res.getDataCoverage());
+                System.out.printf("%-15s%s\n", "Data Coverage", res.getDatacoverage());
                 System.out.printf("%-15s%s\n", "ID", res.getId());
                 System.out.println("");
                 

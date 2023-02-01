@@ -8,12 +8,12 @@ public class ResultSet {
 
     private int offset;
     private int count;
-    private int Limit;
+    private int limit;
 
     public ResultSet(int offset, int count, int Limit) {
         this.offset = offset;
         this.count = count;
-        this.Limit = Limit;
+        this.limit = Limit;
     }
 
     public ResultSet() {
@@ -36,11 +36,11 @@ public class ResultSet {
     }
 
     public int getLimit() {
-        return Limit;
+        return limit;
     }
 
     public void setLimit(int Limit) {
-        this.Limit = Limit;
+        this.limit = Limit;
     }
 
 

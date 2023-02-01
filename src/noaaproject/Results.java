@@ -6,20 +6,11 @@ package noaaproject;
  */
 public class Results {
     private String uid;
-    private String minDate;
-    private String maxDate;
-    private String Name;
-    private String dataCoverage;
+    private String mindate;
+    private String maxdate;
+    private String name;
+    private String datacoverage;
     private String id;
-
-    public Results(String uid, String minDate, String maxDate, String Name, String dataCoverage, String id) {
-        this.uid = uid;
-        this.minDate = minDate;
-        this.maxDate = maxDate;
-        this.Name = Name;
-        this.dataCoverage = dataCoverage;
-        this.id = id;
-    }
 
     public Results() {
     }
@@ -32,36 +23,36 @@ public class Results {
         this.uid = uid;
     }
 
-    public String getMinDate() {
-        return minDate;
+    public String getMindate() {
+        return mindate;
     }
 
-    public void setMinDate(String minDate) {
-        this.minDate = minDate;
+    public void setMindate(String mindate) {
+        this.mindate = mindate;
     }
 
-    public String getMaxDate() {
-        return maxDate;
+    public String getMaxdate() {
+        return maxdate;
     }
 
-    public void setMaxDate(String maxDate) {
-        this.maxDate = maxDate;
+    public void setMaxdate(String maxdate) {
+        this.maxdate = maxdate;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDataCoverage() {
-        return dataCoverage;
+    public String getDatacoverage() {
+        return datacoverage;
     }
 
-    public void setDataCoverage(String dataCoverage) {
-        this.dataCoverage = dataCoverage;
+    public void setDatacoverage(String datacoverage) {
+        this.datacoverage = datacoverage;
     }
 
     public String getId() {
@@ -71,6 +62,12 @@ public class Results {
     public void setId(String id) {
         this.id = id;
     }
+
+
+
+
+
+
     
     
 }

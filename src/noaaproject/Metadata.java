@@ -12,6 +12,9 @@ public class Metadata {
         this.resultset = resultset;
     }
 
+    public Metadata() {
+    }
+
     public ResultSet getResultset() {
         return resultset;
     }
