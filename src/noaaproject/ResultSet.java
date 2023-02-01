@@ -6,11 +6,11 @@ package noaaproject;
  */
 public class ResultSet {
 
-    private String offset;
-    private String count;
-    private String Limit;
+    private int offset;
+    private int count;
+    private int Limit;
 
-    public ResultSet(String offset, String count, String Limit) {
+    public ResultSet(int offset, int count, int Limit) {
         this.offset = offset;
         this.count = count;
         this.Limit = Limit;
@@ -19,28 +19,29 @@ public class ResultSet {
     public ResultSet() {
     }
 
-    public String getOffset() {
+    public int getOffset() {
         return offset;
     }
 
-    public void setOffset(String offset) {
+    public void setOffset(int offset) {
         this.offset = offset;
     }
 
-    public String getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(String count) {
+    public void setCount(int count) {
         this.count = count;
     }
 
-    public String getLimit() {
+    public int getLimit() {
         return Limit;
     }
 
-    public void setLimit(String Limit) {
+    public void setLimit(int Limit) {
         this.Limit = Limit;
     }
+
 
 }
