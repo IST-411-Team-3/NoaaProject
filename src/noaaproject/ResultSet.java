@@ -3,21 +3,18 @@ package noaaproject;
 /**
  *
  * @author Team 3
+ *
+ * This is the resultset that the metadata class contains
+ *
+ * No constructors are necessary for the gson to operate
  */
 public class ResultSet {
 
+    //Name the variable exactly the same way that it is present in the JSON
+    //  Even captilization needs to be taken into account
     private int offset;
     private int count;
     private int limit;
-
-    public ResultSet(int offset, int count, int Limit) {
-        this.offset = offset;
-        this.count = count;
-        this.limit = Limit;
-    }
-
-    public ResultSet() {
-    }
 
     public int getOffset() {
         return offset;
@@ -42,6 +39,5 @@ public class ResultSet {
     public void setLimit(int Limit) {
         this.limit = Limit;
     }
-
 
 }

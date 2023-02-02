@@ -3,17 +3,22 @@ package noaaproject;
 /**
  *
  * @author Team 3
+ *
+ * This is the main set of data for the entire JSON. It contains info on the 11
+ * datasets that can be found on the current section of the noaa site.
+ *
+ * No constructors are necessary for the gson to operate
  */
 public class Results {
+
+    //Variable names and types must be exactly the same as they appear in the JSON
+    //  Capitolization matters
     private String uid;
     private String mindate;
     private String maxdate;
     private String name;
     private String datacoverage;
     private String id;
-
-    public Results() {
-    }
 
     public String getUid() {
         return uid;
@@ -63,11 +68,4 @@ public class Results {
         this.id = id;
     }
 
-
-
-
-
-
-    
-    
 }
