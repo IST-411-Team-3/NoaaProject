@@ -6,24 +6,15 @@ package noaaproject;
  */
 class NoaaData {
 
-    private Metadata metadata;
     private Results results[];
 
-    public NoaaData(Metadata metaData, Results[] results) {
-        this.metadata = metaData;
+    public NoaaData(Results[] results) {
+
         this.results = results;
     }
 
 
     public NoaaData() {
-    }
-
-    public Metadata getMetaData() {
-        return metadata;
-    }
-
-    public void setMetaData(Metadata metaData) {
-        this.metadata = metaData;
     }
 
     public Results[] getResults() {
