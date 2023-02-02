@@ -1,4 +1,4 @@
-package noaaproject;
+package StrangerThings;
 
 /**
  *
@@ -149,6 +149,5 @@ public class Results {
     public void setShow(String show) {
         this.show = show;
     }
-
 
 }
