@@ -3,15 +3,17 @@ package noaaproject;
 /**
  *
  * @author Team 3
- * 
- * This class houses the other 2 classes that gson pulls from the JSON
- * 
- * No constructors are needed for the gson to operate
+ *
+ * This class houses the other 2 classes that GSON pulls from the JSON
+ *
+ * No constructors are needed for the GSON to operate
  */
 class NoaaData {
 
-    //Name the variable exactly the same way that it is present in the JSON
-    //  Even captilization needs to be taken into account
+    /*
+    *Variable names are case sensitive and must be exactly the same as
+    *they appear in the JSON
+     */
     private Metadata metadata;
     private Results results[];
 

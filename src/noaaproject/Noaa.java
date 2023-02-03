@@ -13,7 +13,7 @@ Purpose Details: NOAA Web Services
 Course: IST 411
 Author: Team 3
 Date Developed: 1/31/2023
-Last Date Changed: 1/31/2023
+Last Date Changed: 2/2/2023
 Revision: 1
  */
 public class Noaa {
@@ -36,18 +36,19 @@ public class Noaa {
             BufferedReader buffRead = new BufferedReader(inputStreamRead);
             response = buffRead.readLine();
 
-            //Create a NoaaData object for the gson to turn the json into objects.
-            //  It needs the data and the first class for the data to be converted
-            //  into, fed into the parameters of the fromJson method
+            /*
+            *Create a NoaaData object for the GSON to turn the JSON into objects.
+            *It needs the data and the first class for the data to be converted
+            *into, fed into the parameters of the fromJson method
+             */
             NoaaData noaa = gson.fromJson(response, NoaaData.class);
 
             /*
-            The gson examines the structure of the JSON and uses class objects to store components
-              of the json.  In this case there are three: metadata, resultset, and results.
-              These are represented by the classes of the same names.  Finally, the gson stores individual
-              data points in each corresponding class based on the type and name of class variables
+            *The GSON examines the structure of the JSON and uses class objects to store components
+            *of the JSON. In this case there are three: metadata, resultset, and results.
+            *These are represented by the classes of the same names. Finally, the GSON stores individual
+            *data points in each corresponding class based on the type and name of class variables
              */
-            
             //Metadata data printout
             System.out.println("Result Set");
             System.out.println("----------");
@@ -71,8 +72,7 @@ public class Noaa {
 
             }
 
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println(ex);
         } finally {
             connection.disconnect();

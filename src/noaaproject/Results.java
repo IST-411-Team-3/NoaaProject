@@ -4,15 +4,17 @@ package noaaproject;
  *
  * @author Team 3
  *
- * This is the main set of data for the entire JSON. It contains info on the 11
- * datasets that can be found on the current section of the noaa site.
+ * This is the main set of data for the entire JSON. It contains info on the
+ * eleven data sets that can be found on the current section of the NOAA site.
  *
- * No constructors are necessary for the gson to operate
+ * No constructors are necessary for the GSON to operate
  */
 public class Results {
 
-    //Variable names and types must be exactly the same as they appear in the JSON
-    //  Capitolization matters
+    /*
+    *Variable names are case sensitive and must be exactly the same as
+    *they appear in the JSON
+     */
     private String uid;
     private String mindate;
     private String maxdate;
