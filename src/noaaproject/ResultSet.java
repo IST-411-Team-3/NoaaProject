@@ -18,6 +18,9 @@ public class ResultSet {
     private int count;
     private int limit;
 
+    /*
+    * Gettters & Setters for offset
+    */
     public int getOffset() {
         return offset;
     }
@@ -26,6 +29,9 @@ public class ResultSet {
         this.offset = offset;
     }
 
+    /*
+    * Gettters & Setters for count
+    */
     public int getCount() {
         return count;
     }
@@ -34,6 +40,9 @@ public class ResultSet {
         this.count = count;
     }
 
+    /*
+    * Gettters & Setters for limit
+    */
     public int getLimit() {
         return limit;
     }

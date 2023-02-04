@@ -22,6 +22,9 @@ class NoaaData {
         this.results = results;
     }
 
+    /*
+    * Gettters & Setters for Metadata
+    */
     public Metadata getMetaData() {
         return metadata;
     }
@@ -30,6 +33,9 @@ class NoaaData {
         this.metadata = metaData;
     }
 
+    /*
+    * Gettters & Setters for Results
+    */
     public Results[] getResults() {
         return results;
     }

@@ -13,6 +13,9 @@ public class Metadata {
 
     private ResultSet resultset;
 
+    /*
+    * Get & Setters for ResultsSet
+    */
     public ResultSet getResultset() {
         return resultset;
     }

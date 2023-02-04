@@ -22,6 +22,9 @@ public class Results {
     private String datacoverage;
     private String id;
 
+    /*
+    * Gettters & Setters for UID
+    */
     public String getUid() {
         return uid;
     }
@@ -30,6 +33,9 @@ public class Results {
         this.uid = uid;
     }
 
+    /*
+    * Gettters & Setters for MINDATE
+    */
     public String getMindate() {
         return mindate;
     }
@@ -37,7 +43,10 @@ public class Results {
     public void setMindate(String mindate) {
         this.mindate = mindate;
     }
-
+    
+    /*
+    * Gettters & Setters for MAXDATE
+    */
     public String getMaxdate() {
         return maxdate;
     }
@@ -46,6 +55,9 @@ public class Results {
         this.maxdate = maxdate;
     }
 
+    /*
+    * Gettters & Setters for NAME
+    */
     public String getName() {
         return name;
     }
@@ -54,6 +66,9 @@ public class Results {
         this.name = name;
     }
 
+    /*
+    * Gettters & Setters for DATACOVERAGE
+    */
     public String getDatacoverage() {
         return datacoverage;
     }
@@ -62,6 +77,9 @@ public class Results {
         this.datacoverage = datacoverage;
     }
 
+    /*
+    * Gettters & Setters for ID
+    */
     public String getId() {
         return id;
     }

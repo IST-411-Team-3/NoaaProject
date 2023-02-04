@@ -13,8 +13,8 @@ Purpose Details: NOAA Web Services
 Course: IST 411
 Author: Team 3
 Date Developed: 1/31/2023
-Last Date Changed: 2/2/2023
-Revision: 1
+Last Date Changed: 2/3/2023
+Revision: 2
  */
 public class Noaa {
 
@@ -27,9 +27,14 @@ public class Noaa {
         HttpURLConnection connection = null;
 
         try {
+            /*
+            * Below is the url that is locked and needs a token to unlock.
+            */
             URL url = new URL("https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets");
             connection = (HttpURLConnection) url.openConnection();
-            //Use our token to grant access to the data
+            /*
+            *Use our token to grant access to the data.
+            */        
             connection.setRequestProperty("token", accessToken);
             //Typical gathering and storing of retrieved data
             InputStreamReader inputStreamRead = new InputStreamReader(connection.getInputStream());
@@ -60,6 +65,9 @@ public class Noaa {
             //Results is the bulk of the data so it is stored in an array and then read out
             int count = 1;
             for (Results res : noaa.getResults()) {
+                /*
+                *Print out format used to read the data.
+                */ 
                 System.out.println("Result " + count++);
                 System.out.println("---------");
                 System.out.printf("%-15s%s\n", "Uid", res.getUid());
